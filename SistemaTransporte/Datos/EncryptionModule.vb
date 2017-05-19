@@ -1,32 +1,30 @@
-﻿Module EncryptionModule
-    Public Function Base64Encode(ByVal sData As String) As String
+﻿Imports System.Security.Cryptography
+Imports System.Text
 
+Module EncryptionModule
+    Private DES As New TripleDESCryptoServiceProvider
+    Private MD5 As New MD5CryptoServiceProvider
+
+    Public Function MD5Hash(ByVal value As String) As Byte()
+        Return MD5.ComputeHash(ASCIIEncoding.ASCII.GetBytes(value))
+    End Function
+
+    Public Function Encrypt(ByVal stringToEncrypt As String, ByVal key As String) As String
+        DES.Key = EncryptionModule.MD5Hash(key)
+        DES.Mode = CipherMode.ECB
+        Dim Buffer As Byte() = ASCIIEncoding.ASCII.GetBytes(stringToEncrypt)
+        Return Convert.ToBase64String(DES.CreateEncryptor().TransformFinalBlock(Buffer, 0, Buffer.Length))
+    End Function
+
+    Public Function Decrypt(ByVal encryptedString As String, ByVal key As String) As String
         Try
-            Dim encData_Byte As Byte() = New Byte(sData.Length - 1) {}
-            encData_Byte = System.Text.Encoding.UTF8.GetBytes(sData)
-            Dim encodedData As String = Convert.ToBase64String(encData_Byte)
-            Return (encodedData)
-
+            DES.Key = EncryptionModule.MD5Hash(key)
+            DES.Mode = CipherMode.ECB
+            Dim Buffer As Byte() = Convert.FromBase64String(encryptedString)
+            Return ASCIIEncoding.ASCII.GetString(DES.CreateDecryptor().TransformFinalBlock(Buffer, 0, Buffer.Length))
         Catch ex As Exception
-
-            Throw (New Exception("Error is base64Encode" & ex.Message))
-
+            Return Nothing
+            MessageBox.Show("Invalid Key", "Decryption Failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         End Try
-
-
     End Function
-
-    Public Function Base64Decode(ByVal sData As String) As String
-
-        Dim encoder As New System.Text.UTF8Encoding()
-        Dim utf8Decode As System.Text.Decoder = encoder.GetDecoder()
-        Dim todecode_byte As Byte() = Convert.FromBase64String(sData)
-        Dim charCount As Integer = utf8Decode.GetCharCount(todecode_byte, 0, todecode_byte.Length)
-        Dim decoded_char As Char() = New Char(charCount - 1) {}
-        utf8Decode.GetChars(todecode_byte, 0, todecode_byte.Length, decoded_char, 0)
-        Dim result As String = New [String](decoded_char)
-        Return result
-
-    End Function
-
 End Module

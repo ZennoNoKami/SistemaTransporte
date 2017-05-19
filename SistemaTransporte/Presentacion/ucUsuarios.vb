@@ -9,7 +9,7 @@ Public Class ucUsuarios
                    And txtPass.Text <> String.Empty And txtCPass.Text <> String.Empty Then
 
                     If txtPass.Text = txtCPass.Text Then
-                        frmUsuarios.GuardarUsuario(txtNombre.Text, txtUsuario.Text, txtPass.Text)
+                        frmUsuarios.GuardarUsuario(txtNombre.Text, txtUsuario.Text, txtPass.Text, txtEmail.Text)
                     Else
                         MessageBoxEx.Show("Contraseñas no son iguales", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     End If
@@ -22,7 +22,7 @@ Public Class ucUsuarios
                   And txtPass.Text <> String.Empty And txtCPass.Text <> String.Empty Then
 
                     If txtPass.Text = txtCPass.Text Then
-                        frmUsuarios.ModificarUsuario(txtID.Text, txtNombre.Text, txtUsuario.Text, txtPass.Text)
+                        frmUsuarios.ModificarUsuario(txtID.Text, txtNombre.Text, txtUsuario.Text, txtPass.Text, txtEmail.Text)
                     Else
                         MessageBoxEx.Show("Contraseñas no son iguales", "Error al modificar", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     End If
@@ -47,17 +47,21 @@ Public Class ucUsuarios
         btnGuardar.Text = val
     End Sub
 
-    Public Sub Modificar(ByVal ID As Integer, ByVal name As String, ByVal user As String, ByVal password As String)
+    Public Sub Modificar(ByVal ID As Integer, ByVal name As String, ByVal user As String, ByVal password As String, ByVal email As String)
         txtID.Text = ID
         txtNombre.Text = name
         txtUsuario.Text = user
         txtPass.Text = password
+        txtCPass.Text = String.Empty
+        txtEmail.Text = email
+
     End Sub
 
     Public Sub ClearTextBox()
         txtID.Clear()
         txtNombre.Clear()
         txtUsuario.Clear()
+        txtEmail.Clear()
         txtPass.Clear()
         txtCPass.Clear()
     End Sub

@@ -29,4 +29,22 @@ Public Class frmMenu
     Private Sub frmMenu_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         frmLog.Show()
     End Sub
+
+    Private Sub ButtonX2_Click(sender As Object, e As EventArgs) Handles ButtonX2.Click
+
+    End Sub
+
+    Private Sub btnItinerario_Click(sender As Object, e As EventArgs) Handles btnItinerario.Click
+        frmItinerario.Show()
+    End Sub
+
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        Me.Close()
+        frmLog.Close()
+    End Sub
+
+    Private Sub ButtonItem1_Click(sender As Object, e As EventArgs) Handles ButtonItem1.Click
+        frmLog.Show()
+        Me.Close()
+    End Sub
 End Class

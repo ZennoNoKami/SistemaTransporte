@@ -1,6 +1,6 @@
 ﻿Public Class VUsuario
     Dim id As Integer
-    Dim usuario, pwd, nombre As String
+    Dim usuario, pwd, nombre, email As String
     Dim admin As Boolean
 
     Public Property G_id
@@ -36,6 +36,15 @@
         End Get
         Set(ByVal value)
             nombre = value
+        End Set
+    End Property
+
+    Public Property G_email
+        Get
+            Return email
+        End Get
+        Set(ByVal value)
+            email = value
         End Set
     End Property
 

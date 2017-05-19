@@ -11,7 +11,7 @@ Public Class frmUsuarios
     Dim cont As Integer
 
     Private Sub frmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        StyleManager.Style = eStyle.Office2016
+        'StyleManager.Style = eStyle.Office2016
         UcUsuarios2.Location = New Point(Me.ClientSize.Width / 2 - UcUsuarios2.Size.Width / 2, Me.ClientSize.Height / 2 - UcUsuarios2.Size.Height / 2)
         SlidePanel1.IsOpen = False
         Mostrar()
@@ -57,7 +57,9 @@ Public Class frmUsuarios
             UcUsuarios2.Location = New Point(Me.ClientSize.Width / 2 - UcUsuarios2.Size.Width / 2, Me.ClientSize.Height / 2 - UcUsuarios2.Size.Height / 2)
             UcUsuarios2.Change("Guardar")
             UcUsuarios2.ClearTextBox()
-            UcUsuarios2.LabelX1.Text = "Nueva Usuario"
+            UcUsuarios2.LabelID.Visible = False
+            UcUsuarios2.txtID.Visible = False
+            UcUsuarios2.LabelX1.Text = "Nuevo Usuario"
             ' Initialize the random-number generator.
             Randomize()
             ' Generate random value between 1 and 4. 
@@ -122,18 +124,22 @@ Public Class frmUsuarios
 
     End Sub
 
-    Public Sub GuardarUsuario(ByVal name As String, ByVal user As String, ByVal password As String)
+    Public Sub GuardarUsuario(ByVal name As String, ByVal user As String, ByVal password As String, ByVal email As String)
         Try
             Dim dts As New VUsuario
             Dim func As New FUsuario
 
             dts.G_usuario = user
             dts.G_nombre = name
-            dts.G_pwd = Base64Encode(password)
+            dts.G_email = email
+            dts.G_pwd = Encrypt(password, "F~:KRF#q}bOzpDGp0[v2RN_{K<?&@l")
             dts.G_admin = False
             If func.Insertar(dts) Then
                 Mostrar()
                 SlidePanel1.IsOpen = False
+                If cbEliminar.CheckState = CheckState.Checked Then
+                    cbEliminar.CheckState = CheckState.Unchecked
+                End If
                 MessageBoxEx.Show("Usuario registrado correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
                 Mostrar()
@@ -147,7 +153,7 @@ Public Class frmUsuarios
         End Try
     End Sub
 
-    Public Sub ModificarUsuario(ByVal id As Integer, ByVal name As String, ByVal user As String, ByVal password As String)
+    Public Sub ModificarUsuario(ByVal id As Integer, ByVal name As String, ByVal user As String, ByVal password As String, ByVal email As String)
         Try
             Dim dts As New VUsuario
             Dim func As New FUsuario
@@ -155,11 +161,15 @@ Public Class frmUsuarios
             dts.G_id = id
             dts.G_usuario = user
             dts.G_nombre = name
-            dts.G_pwd = password
+            dts.G_email = email
+            dts.G_pwd = Encrypt(password, "F~:KRF#q}bOzpDGp0[v2RN_{K<?&@l")
             dts.G_admin = False
             If func.Editar(dts) Then
                 Mostrar()
                 SlidePanel1.IsOpen = False
+                If cbEliminar.CheckState = CheckState.Checked Then
+                    cbEliminar.CheckState = CheckState.Unchecked
+                End If
                 MessageBoxEx.Show("Usuario modificado correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Else
                 Mostrar()
@@ -179,7 +189,7 @@ Public Class frmUsuarios
             UcUsuarios2.LabelID.Visible = True
             UcUsuarios2.txtID.Visible = True
             UcUsuarios2.LabelX1.Text = "Modificar Usuario"
-            UcUsuarios2.Modificar(dgv1.Rows(e.RowIndex).Cells(1).Value, dgv1.Rows(e.RowIndex).Cells(4).Value, dgv1.Rows(e.RowIndex).Cells(2).Value, dgv1.Rows(e.RowIndex).Cells(3).Value)
+            UcUsuarios2.Modificar(dgv1.Rows(e.RowIndex).Cells(1).Value, dgv1.Rows(e.RowIndex).Cells(4).Value, dgv1.Rows(e.RowIndex).Cells(2).Value, dgv1.Rows(e.RowIndex).Cells(3).Value, dgv1.Rows(e.RowIndex).Cells(5).Value)
             ' Initialize the random-number generator.
             Randomize()
             ' Generate random value between 1 and 4. 
@@ -233,6 +243,7 @@ Public Class frmUsuarios
                     .Columns(2).HeaderText = "Usuario"
                     .Columns(3).HeaderText = "Contraseña"
                     .Columns(4).HeaderText = "Nombre"
+                    .Columns(5).HeaderText = "Email"
                     .Columns(5).HeaderText = "Admin"
                     .Columns(0).ReadOnly = False
                     .Columns(1).ReadOnly = True
@@ -240,6 +251,7 @@ Public Class frmUsuarios
                     .Columns(3).ReadOnly = True
                     .Columns(4).ReadOnly = True
                     .Columns(5).ReadOnly = True
+                    .Columns(6).ReadOnly = True
                 End With
             Else
                 dgv1.DataSource = Nothing
@@ -256,7 +268,5 @@ Public Class frmUsuarios
     Private Sub frmUsuarios_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         UcUsuarios2.Location = New Point(Me.ClientSize.Width / 2 - UcUsuarios2.Size.Width / 2, Me.ClientSize.Height / 2 - UcUsuarios2.Size.Height / 2)
     End Sub
-    Private Sub SlidePanel1_IsOpenChanged(sender As Object, e As EventArgs) Handles SlidePanel1.IsOpenChanged
-        Me.Size = New Point(1366, 768)
-    End Sub
+
 End Class

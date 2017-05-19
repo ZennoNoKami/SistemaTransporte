@@ -44,6 +44,7 @@ Public Class frmCiudades
             btn1.Text = "Guardar"
             btn2.Text = "Cancelar"
             EnableTextBox()
+            txtID.Enabled = False
             ClearTextBox()
             btn2.Enabled = True
             If LabelID.Visible And txtID.Visible Then
@@ -135,8 +136,8 @@ Public Class frmCiudades
             txtID.Visible = True
             txtCiudad.Visible = True
             LabelCiudad.Visible = True
-            txtID.Text = dgv1.Rows(e.RowIndex).Cells(0).Value
-            txtCiudad.Text = dgv1.Rows(e.RowIndex).Cells(1).Value
+            txtID.Text = dgv1.Rows(e.RowIndex).Cells(1).Value
+            txtCiudad.Text = dgv1.Rows(e.RowIndex).Cells(2).Value
             DisableTextBox()
             ResetButtons()
             btn2.Enabled = True

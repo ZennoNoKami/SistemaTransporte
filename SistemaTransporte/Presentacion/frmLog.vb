@@ -39,7 +39,7 @@ Public Class frmLog
                     Dim pass As String = dt.Rows(0).Item(2)
                     Dim id As Integer = dt.Rows(0).Item(0)
                     nombre = dt.Rows(0).Item(3)
-                    If txtUser.Text = user And txtPassword.Text = pass Then
+                    If txtUser.Text = user And Encrypt(txtPassword.Text, "F~:KRF#q}bOzpDGp0[v2RN_{K<?&@l") = pass Then
                         UserData(id)
                         txtUser.ResetText()
                         txtPassword.ResetText()

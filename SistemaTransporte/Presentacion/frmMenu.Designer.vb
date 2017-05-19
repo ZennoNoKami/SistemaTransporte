@@ -105,6 +105,7 @@ Partial Class frmMenu
         '
         Me.btnUsr.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.btnUsr.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.btnUsr.FocusCuesEnabled = False
         Me.btnUsr.Location = New System.Drawing.Point(1243, 12)
         Me.btnUsr.Name = "btnUsr"
         Me.btnUsr.Size = New System.Drawing.Size(95, 23)
@@ -116,6 +117,7 @@ Partial Class frmMenu
         'ButtonItem1
         '
         Me.ButtonItem1.Name = "ButtonItem1"
+        Me.ButtonItem1.Shape = New DevComponents.DotNetBar.RoundRectangleShapeDescriptor()
         Me.ButtonItem1.Text = "Cerrar Sesión"
         '
         'ButtonX2

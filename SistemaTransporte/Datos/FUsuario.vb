@@ -40,6 +40,7 @@ Public Class FUsuario
             cmd.Parameters.AddWithValue("@PWD", dts.G_pwd)
             cmd.Parameters.AddWithValue("@NOMBRE", dts.G_nombre)
             cmd.Parameters.AddWithValue("@ADM", dts.G_admin)
+            cmd.Parameters.AddWithValue("@EMAIL", dts.G_email)
 
             If cmd.ExecuteNonQuery Then
                 Return True
@@ -67,6 +68,7 @@ Public Class FUsuario
             cmd.Parameters.AddWithValue("@pwd", dts.G_pwd)
             cmd.Parameters.AddWithValue("@nombre", dts.G_nombre)
             cmd.Parameters.AddWithValue("@adm", dts.G_admin)
+            cmd.Parameters.AddWithValue("@email", dts.G_email)
 
             If cmd.ExecuteNonQuery Then
                 Return True
