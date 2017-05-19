@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C0FDA25-24C1-47B8-98CF-24A36459216C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SistemaTransporte.My.MyApplication</StartupObject>
+    <RootNamespace>SistemaTransporte</RootNamespace>
+    <AssemblyName>SistemaTransporte</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SistemaTransporte.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SistemaTransporte.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Charts.Design, Version=14.0.0.15, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=14.0.0.15, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=14.0.0.15, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.SuperGrid.Design, Version=14.0.0.15, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=14.0.0.15, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datos\Conexion.vb" />
+    <Compile Include="Datos\Data.vb" />
+    <Compile Include="Datos\EncryptionModule.vb" />
+    <Compile Include="Datos\FBus.vb" />
+    <Compile Include="Datos\FCiudades.vb" />
+    <Compile Include="Datos\FClientes.vb" />
+    <Compile Include="Datos\FEncomienda.vb" />
+    <Compile Include="Datos\FUsuario.vb" />
+    <Compile Include="Datos\FVentas.vb" />
+    <Compile Include="Logica\VBus.vb" />
+    <Compile Include="Logica\VEncomienda.vb" />
+    <Compile Include="Logica\V_Ventas.vb" />
+    <Compile Include="Presentacion\frmLog.Designer.vb">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logica\VCiudades.vb" />
+    <Compile Include="Logica\VUsuario.vb" />
+    <Compile Include="Presentacion\frmCiudades.Designer.vb">
+      <DependentUpon>frmCiudades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmCiudades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmClientes.Designer.vb">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logica\VClientes.vb" />
+    <Compile Include="Presentacion\frmItinerario.Designer.vb">
+      <DependentUpon>frmItinerario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmItinerario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Presentacion\frmUsuario.Designer.vb">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmVentas.Designer.vb">
+      <DependentUpon>frmVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ucUsuarios.Designer.vb">
+      <DependentUpon>ucUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\ucUsuarios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentacion\ucVentas.Designer.vb">
+      <DependentUpon>ucVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\ucVentas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Presentacion\frmLog.resx">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmCiudades.resx">
+      <DependentUpon>frmCiudades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmClientes.resx">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmItinerario.resx">
+      <DependentUpon>frmItinerario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmUsuario.resx">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmVentas.resx">
+      <DependentUpon>frmVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\ucUsuarios.resx">
+      <DependentUpon>ucUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\ucVentas.resx">
+      <DependentUpon>ucVentas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\a.jpg" />
+    <Content Include="Resources\ABONOS.jpg" />
+    <None Include="Resources\Add Ticket-50.png" />
+    <Content Include="Resources\aqua_stripped_folder_do_not_disturb.png" />
+    <None Include="Resources\Bus-50.png" />
+    <Content Include="Resources\busito.jpg" />
+    <Content Include="Resources\cliente.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\close2.png" />
+    <Content Include="Resources\Custom-Icon-Design-Flatastic-5-Reports.ico" />
+    <Content Include="Resources\ESTE11.jpg" />
+    <None Include="Resources\Flight Seat-50.png" />
+    <Content Include="Resources\HP_Crystal_Rush.jpg" />
+    <Content Include="Resources\j.bmp" />
+    <Content Include="Resources\Keys.jpg" />
+    <None Include="Resources\Leave-50.png" />
+    <Content Include="Resources\lock_disabled.jpg" />
+    <None Include="Resources\Logout Rounded Up-50.png" />
+    <Content Include="Resources\recursos.jpg" />
+    <Content Include="Resources\reportes.png" />
+    <Content Include="Resources\salir1.jpg" />
+    <Content Include="Resources\unnamed.png" />
+    <None Include="Resources\User.png" />
+    <Content Include="Resources\Usera.jpg" />
+    <Content Include="Resources\userf.jpg" />
+    <None Include="Resources\User_2.png" />
+    <Content Include="Resources\usuariocrear.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
