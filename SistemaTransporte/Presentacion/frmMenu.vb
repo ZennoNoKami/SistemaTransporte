@@ -6,7 +6,7 @@ Public Class frmMenu
     Dim cmd As New SqlCommand
     Private Sub Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         StyleManager.Style = eStyle.Office2016
-        Dim login As New frmLogin()
+
     End Sub
 
 

@@ -217,7 +217,7 @@ Partial Class frmUsuarios
         Me.SlidePanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SlidePanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.SlidePanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.SlidePanel1.Controls.Add(Me.UcUsuarios2)
         Me.SlidePanel1.ForeColor = System.Drawing.Color.Black
         Me.SlidePanel1.Location = New System.Drawing.Point(0, 12)
@@ -230,7 +230,7 @@ Partial Class frmUsuarios
         '
         'UcUsuarios2
         '
-        Me.UcUsuarios2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.UcUsuarios2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UcUsuarios2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.UcUsuarios2.ForeColor = System.Drawing.Color.Black
         Me.UcUsuarios2.Location = New System.Drawing.Point(334, 51)
@@ -274,6 +274,7 @@ Partial Class frmUsuarios
         Me.Controls.Add(Me.SlidePanel1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.MinimumSize = New System.Drawing.Size(1000, 500)
         Me.Name = "frmUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

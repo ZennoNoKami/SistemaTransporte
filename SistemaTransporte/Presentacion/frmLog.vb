@@ -47,8 +47,8 @@ Public Class frmLog
                         txtUser.BorderColorIdle = Color.Silver
                         txtPassword.BorderColorIdle = Color.Silver
                         Me.Hide()
-                        frmMenu.btnUsr.Text = nombre
-                        frmMenu.Show()
+                        frmMainMenu.btnUsr.LabelText = nombre
+                        frmMainMenu.Show()
 
                     Else
                         MessageBoxEx.Show("Contraseña incorrecta", "Datos Incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Error)

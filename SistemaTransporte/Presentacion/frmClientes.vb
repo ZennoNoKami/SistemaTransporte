@@ -1,6 +1,7 @@
 Imports System.IO
 Imports System.Data.SqlClient
 Imports DevComponents.DotNetBar
+Imports System.ComponentModel
 
 Public Class frmClientes
     Private dt As New DataTable
@@ -323,6 +324,6 @@ Public Class frmClientes
     End Sub
 
     Private Sub frmClientes_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        frmMenu.Show()
+        frmMainMenu.Show()
     End Sub
 End Class

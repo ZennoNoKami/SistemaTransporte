@@ -83,6 +83,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property CircledUser_Male50() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CircledUser Male50", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property close() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("close", resourceCulture)
@@ -146,6 +156,26 @@ Namespace My.Resources
         Friend ReadOnly Property User_2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("User_2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property User1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("User1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property UserFilled() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("UserFilled", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

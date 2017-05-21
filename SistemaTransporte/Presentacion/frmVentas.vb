@@ -20,4 +20,8 @@ Public Class frmVentas
             End With
         End If
     End Sub
+
+    Private Sub frmVentas_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        frmMainMenu.Show()
+    End Sub
 End Class

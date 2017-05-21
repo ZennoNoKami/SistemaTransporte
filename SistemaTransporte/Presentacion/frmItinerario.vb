@@ -335,7 +335,7 @@ Public Class frmItinerario
         cmbOrigen.Items.Clear()
         cmbDestino.Items.Clear()
         txtIdAuto.Items.Clear()
-        frmMenu.Show()
+        frmMainMenu.Show()
     End Sub
 
     Private Sub txtbuscar_TextChanged(sender As Object, e As EventArgs) Handles txtbuscar.TextChanged

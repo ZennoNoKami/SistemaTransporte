@@ -214,7 +214,7 @@ Public Class frmUsuarios
     End Sub
 
     Private Sub frmUsuarios_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        frmMenu.Show()
+        frmMainMenu.Show()
     End Sub
 
     Private Sub ComboBoxEx1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxEx1.SelectedIndexChanged

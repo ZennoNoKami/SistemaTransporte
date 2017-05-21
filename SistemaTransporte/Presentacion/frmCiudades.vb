@@ -232,9 +232,7 @@ Public Class frmCiudades
     End Sub
 
     Private Sub frmCiudades_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-
-        frmMenu.Show()
-
+        frmMainMenu.Show()
     End Sub
 
     Private Sub cbEliminar_CheckedChanged(sender As Object, e As EventArgs) Handles cbEliminar.CheckedChanged
