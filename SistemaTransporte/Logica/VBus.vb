@@ -20,6 +20,10 @@
         End Set
     End Property
 
+    Public Sub New()
+
+    End Sub
+
     Public Sub New(ByVal idautobus As Integer, ByVal cantidadasientos As Integer)
         G_idautobus = idautobus
         G_cantidadasientos = cantidadasientos

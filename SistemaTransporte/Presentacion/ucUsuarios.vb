@@ -51,7 +51,7 @@ Public Class ucUsuarios
         txtID.Text = ID
         txtNombre.Text = name
         txtUsuario.Text = user
-        txtPass.Text = password
+        txtPass.Text = Decrypt(password, "F~:KRF#q}bOzpDGp0[v2RN_{K<?&@l")
         txtCPass.Text = String.Empty
         txtEmail.Text = email
 
@@ -66,4 +66,37 @@ Public Class ucUsuarios
         txtCPass.Clear()
     End Sub
 
+    Private Sub cbAdmin_CheckedChanged(sender As Object, e As EventArgs) Handles cbAdmin.CheckedChanged
+        If cbAdmin.CheckState = CheckState.Checked Then
+            cbVentas.CheckState = CheckState.Checked
+            cbBuses.CheckState = CheckState.Checked
+            cbCiudades.CheckState = CheckState.Checked
+            cbClientes.CheckState = CheckState.Checked
+            cbEncomiendas.CheckState = CheckState.Checked
+            cbItinerario.CheckState = CheckState.Checked
+            cbUsuarios.CheckState = CheckState.Checked
+            cbVentas.Enabled = False
+            cbBuses.Enabled = False
+            cbCiudades.Enabled = False
+            cbClientes.Enabled = False
+            cbEncomiendas.Enabled = False
+            cbItinerario.Enabled = False
+            cbUsuarios.Enabled = False
+        Else
+            cbVentas.CheckState = CheckState.Unchecked
+            cbBuses.CheckState = CheckState.Unchecked
+            cbCiudades.CheckState = CheckState.Unchecked
+            cbClientes.CheckState = CheckState.Unchecked
+            cbEncomiendas.CheckState = CheckState.Unchecked
+            cbItinerario.CheckState = CheckState.Unchecked
+            cbUsuarios.CheckState = CheckState.Unchecked
+            cbVentas.Enabled = True
+            cbBuses.Enabled = True
+            cbCiudades.Enabled = True
+            cbClientes.Enabled = True
+            cbEncomiendas.Enabled = True
+            cbItinerario.Enabled = True
+            cbUsuarios.Enabled = True
+        End If
+    End Sub
 End Class

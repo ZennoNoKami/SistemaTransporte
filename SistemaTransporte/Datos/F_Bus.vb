@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports DevComponents.DotNetBar
-Public Class FBusS
+Public Class F_Bus
     Inherits Conexion
     Dim cmd As New SqlCommand
     Public Function Mostrar() As DataTable

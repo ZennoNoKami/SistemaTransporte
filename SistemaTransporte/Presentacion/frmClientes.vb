@@ -146,6 +146,8 @@ Public Class frmClientes
                     If func.Editar(dts) Then
                         Mostrar()
                         ClearTextBox()
+                        DisableTextBox()
+                        ResetButtons()
                         MessageBoxEx.Show("Cliente modificado correctamente", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Else
                         Mostrar()
@@ -213,8 +215,8 @@ Public Class frmClientes
 
     Private Sub dgv1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv1.CellDoubleClick
         Try
-            LabelID.Visible = True
-            txtID.Visible = True
+            'LabelID.Visible = True
+            'txtID.Visible = True
             txtID.Text = dgv1.Rows(e.RowIndex).Cells(1).Value
             txtNombre.Text = dgv1.Rows(e.RowIndex).Cells(2).Value
             t_edad.Value = dgv1.Rows(e.RowIndex).Cells(3).Value

@@ -11,7 +11,7 @@
     <AssemblyName>SistemaTransporte</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -46,6 +46,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
@@ -95,8 +98,9 @@
   <ItemGroup>
     <Compile Include="Datos\Conexion.vb" />
     <Compile Include="Datos\Data.vb" />
+    <Compile Include="Datos\DBus.vb" />
     <Compile Include="Datos\EncryptionModule.vb" />
-    <Compile Include="Datos\FBus.vb" />
+    <Compile Include="Datos\F_Bus.vb" />
     <Compile Include="Datos\FCiudades.vb" />
     <Compile Include="Datos\FClientes.vb" />
     <Compile Include="Datos\FEncomienda.vb" />
@@ -107,6 +111,18 @@
     <Compile Include="Logica\VEncomienda.vb" />
     <Compile Include="Logica\VItinerario.vb" />
     <Compile Include="Logica\V_Ventas.vb" />
+    <Compile Include="Presentacion\AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Bus.Designer.vb">
+      <DependentUpon>Bus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Bus.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\frmItinerario.Designer.vb">
       <DependentUpon>frmItinerario.vb</DependentUpon>
     </Compile>
@@ -173,6 +189,12 @@
     <Compile Include="Presentacion\frmVentas.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\ucCiudades.Designer.vb">
+      <DependentUpon>ucCiudades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\ucCiudades.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Presentacion\ucUsuarios.Designer.vb">
       <DependentUpon>ucUsuarios.vb</DependentUpon>
     </Compile>
@@ -187,6 +209,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Presentacion\AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Bus.resx">
+      <DependentUpon>Bus.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmItinerario.resx">
       <DependentUpon>frmItinerario.vb</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +245,9 @@
     <EmbeddedResource Include="Presentacion\frmVentas.resx">
       <DependentUpon>frmVentas.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\ucCiudades.resx">
+      <DependentUpon>ucCiudades.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\ucUsuarios.resx">
       <DependentUpon>ucUsuarios.vb</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +256,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -240,6 +272,7 @@
     <Folder Include="Reportes\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\03_Mercedes_Benz_Travego_Coach.jpg" />
     <Content Include="Resources\a.jpg" />
     <Content Include="Resources\ABONOS.jpg" />
     <None Include="Resources\Add Ticket-50.png" />
@@ -251,6 +284,8 @@
     <None Include="Resources\close.png" />
     <None Include="Resources\close2.png" />
     <Content Include="Resources\Custom-Icon-Design-Flatastic-5-Reports.ico" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Delete_2.png" />
     <Content Include="Resources\ESTE11.jpg" />
     <None Include="Resources\Flight Seat-50.png" />
     <Content Include="Resources\HP_Crystal_Rush.jpg" />
@@ -261,10 +296,13 @@
     <None Include="Resources\Logout Rounded Up-50.png" />
     <Content Include="Resources\recursos.jpg" />
     <Content Include="Resources\reportes.png" />
+    <None Include="Resources\round-account-button-with-user-inside %281%29.png" />
+    <None Include="Resources\round-account-button-with-user-inside %282%29.png" />
     <Content Include="Resources\salir1.jpg" />
     <Content Include="Resources\unnamed.png" />
     <None Include="Resources\User.png" />
     <None Include="Resources\User1.png" />
+    <None Include="Resources\user%281%29.png" />
     <Content Include="Resources\Usera.jpg" />
     <Content Include="Resources\userf.jpg" />
     <None Include="Resources\User_2.png" />

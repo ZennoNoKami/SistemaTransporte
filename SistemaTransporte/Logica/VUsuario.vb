@@ -1,7 +1,7 @@
 ﻿Public Class VUsuario
     Dim id As Integer
     Dim usuario, pwd, nombre, email As String
-    Dim admin As Boolean
+    Dim admin, estado As Boolean
 
     Public Property G_id
         Get
@@ -56,15 +56,26 @@
             admin = value
         End Set
     End Property
+
+    Public Property G_estado
+        Get
+            Return estado
+        End Get
+        Set(ByVal value)
+            estado = value
+        End Set
+    End Property
+
     Public Sub New()
 
     End Sub
 
-    Public Sub New(ByVal id As Integer, ByVal usuario As String, ByVal pwd As String, ByVal nombre As String, ByVal admin As Boolean)
+    Public Sub New(ByVal id As Integer, ByVal usuario As String, ByVal pwd As String, ByVal nombre As String, ByVal admin As Boolean, ByVal estado As Boolean)
         G_id = id
         G_usuario = usuario
         G_pwd = pwd
         G_nombre = nombre
         G_admin = admin
+        G_estado = estado
     End Sub
 End Class

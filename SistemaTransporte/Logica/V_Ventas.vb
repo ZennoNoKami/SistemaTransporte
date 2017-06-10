@@ -140,7 +140,24 @@
 
     End Sub
 
-    Public Sub New(ByVal idfacturaencomienda As Integer, ByVal nombrecliente As String, ByVal usuario As String, ByVal fecha As Date, ByVal remitente As String, ByVal tipopago As String, ByVal descripcion As String, ByVal subtotal As Double, ByVal impuesto As Double, ByVal total As Double)
+    Public Sub New(ByVal idboleto As Integer, ByVal nombre As String, ByVal edad As String, ByVal identidad As String, ByVal origen As String,
+                   ByVal destino As String, ByVal hora As String, ByVal tipoPago As String, ByVal asientoBus As String,
+                   ByVal subtotal As Double, ByVal impuesto As Double, ByVal total As Double, ByVal precio As Double, ByVal fecha As Date)
+
+        G_idboleto = idboleto
+        G_nombre = nombre
+        G_edad = edad
+        G_identidad = identidad
+        G_origen = origen
+        G_destino = destino
+        G_hora = hora
+        G_tipopago = tipoPago
+        G_asientobus = asientoBus
+        G_subtotal = subtotal
+        G_impuesto = impuesto
+        G_total = total
+        G_precio = precio
+        G_fecha = fecha
 
     End Sub
 End Class

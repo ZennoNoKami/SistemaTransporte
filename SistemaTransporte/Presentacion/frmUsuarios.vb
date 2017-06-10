@@ -11,7 +11,7 @@ Public Class frmUsuarios
     Dim cont As Integer
 
     Private Sub frmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'StyleManager.Style = eStyle.Office2016
+        StyleManager.Style = eStyle.VisualStudio2012Light
         UcUsuarios2.Location = New Point(Me.ClientSize.Width / 2 - UcUsuarios2.Size.Width / 2, Me.ClientSize.Height / 2 - UcUsuarios2.Size.Height / 2)
         SlidePanel1.IsOpen = False
         Mostrar()
@@ -34,6 +34,7 @@ Public Class frmUsuarios
                     .Columns(4).HeaderText = "Nombre"
                     .Columns(5).HeaderText = "Email"
                     .Columns(6).HeaderText = "Admin"
+                    .Columns(7).HeaderText = "Estado"
                     .Columns(0).ReadOnly = False
                     .Columns(1).ReadOnly = True
                     .Columns(2).ReadOnly = True
@@ -41,6 +42,7 @@ Public Class frmUsuarios
                     .Columns(4).ReadOnly = True
                     .Columns(5).ReadOnly = True
                     .Columns(6).ReadOnly = True
+                    .Columns(7).ReadOnly = True
                 End With
             Else
                 dgv1.DataSource = Nothing
@@ -85,7 +87,7 @@ Public Class frmUsuarios
         If cont = 1 Then
             Dim result As DialogResult
 
-            result = MessageBoxEx.Show("Realmente desea eliminar los productos seleccionados?", "Eliminando Registros", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+            result = MessageBoxEx.Show("Realmente desea eliminar los registros seleccionados?", "Eliminando Registros", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
 
             If result = DialogResult.Yes Then
                 Try

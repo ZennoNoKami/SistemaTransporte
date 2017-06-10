@@ -23,7 +23,7 @@ Partial Class frmLog
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLog))
         Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
@@ -52,6 +52,7 @@ Partial Class frmLog
         Me.btnClose = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btn1 = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.btn2 = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.LoginStyle = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -97,7 +98,7 @@ Partial Class frmLog
         Me.btnSignUp.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(183, Byte), Integer))
         Me.btnSignUp.ActiveForecolor = System.Drawing.Color.White
         Me.btnSignUp.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(183, Byte), Integer))
-        Me.btnSignUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnSignUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.btnSignUp.BackgroundImage = CType(resources.GetObject("btnSignUp.BackgroundImage"), System.Drawing.Image)
         Me.btnSignUp.ButtonText = "Registrar"
         Me.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand
@@ -121,7 +122,7 @@ Partial Class frmLog
         Me.BunifuCustomLabel5.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel5.ForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuCustomLabel5.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel5.Location = New System.Drawing.Point(47, 353)
         Me.BunifuCustomLabel5.Name = "BunifuCustomLabel5"
         Me.BunifuCustomLabel5.Size = New System.Drawing.Size(137, 16)
@@ -130,14 +131,14 @@ Partial Class frmLog
         '
         'txtConfirmarC
         '
-        Me.txtConfirmarC.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.txtConfirmarC.BorderColorIdle = System.Drawing.Color.DarkGray
-        Me.txtConfirmarC.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtConfirmarC.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtConfirmarC.BorderColorIdle = System.Drawing.Color.Black
+        Me.txtConfirmarC.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtConfirmarC.BorderThickness = 1
         Me.txtConfirmarC.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTransition1.SetDecoration(Me.txtConfirmarC, BunifuAnimatorNS.DecorationType.None)
         Me.txtConfirmarC.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.txtConfirmarC.ForeColor = System.Drawing.Color.DarkGray
+        Me.txtConfirmarC.ForeColor = System.Drawing.Color.Black
         Me.txtConfirmarC.isPassword = True
         Me.txtConfirmarC.Location = New System.Drawing.Point(50, 373)
         Me.txtConfirmarC.Margin = New System.Windows.Forms.Padding(4)
@@ -151,7 +152,7 @@ Partial Class frmLog
         Me.BunifuCustomLabel4.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel4, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuCustomLabel4.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel4.Location = New System.Drawing.Point(47, 281)
         Me.BunifuCustomLabel4.Name = "BunifuCustomLabel4"
         Me.BunifuCustomLabel4.Size = New System.Drawing.Size(77, 16)
@@ -160,14 +161,14 @@ Partial Class frmLog
         '
         'txtContrasena
         '
-        Me.txtContrasena.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.txtContrasena.BorderColorIdle = System.Drawing.Color.DarkGray
-        Me.txtContrasena.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtContrasena.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtContrasena.BorderColorIdle = System.Drawing.Color.Black
+        Me.txtContrasena.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtContrasena.BorderThickness = 1
         Me.txtContrasena.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTransition1.SetDecoration(Me.txtContrasena, BunifuAnimatorNS.DecorationType.None)
         Me.txtContrasena.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.txtContrasena.ForeColor = System.Drawing.Color.DarkGray
+        Me.txtContrasena.ForeColor = System.Drawing.Color.Black
         Me.txtContrasena.isPassword = True
         Me.txtContrasena.Location = New System.Drawing.Point(50, 301)
         Me.txtContrasena.Margin = New System.Windows.Forms.Padding(4)
@@ -181,7 +182,7 @@ Partial Class frmLog
         Me.BunifuCustomLabel3.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel3, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuCustomLabel3.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel3.Location = New System.Drawing.Point(47, 210)
         Me.BunifuCustomLabel3.Name = "BunifuCustomLabel3"
         Me.BunifuCustomLabel3.Size = New System.Drawing.Size(55, 16)
@@ -190,14 +191,14 @@ Partial Class frmLog
         '
         'txtUsuario
         '
-        Me.txtUsuario.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.txtUsuario.BorderColorIdle = System.Drawing.Color.DarkGray
-        Me.txtUsuario.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtUsuario.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtUsuario.BorderColorIdle = System.Drawing.Color.Black
+        Me.txtUsuario.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtUsuario.BorderThickness = 1
         Me.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTransition1.SetDecoration(Me.txtUsuario, BunifuAnimatorNS.DecorationType.None)
         Me.txtUsuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.txtUsuario.ForeColor = System.Drawing.Color.DarkGray
+        Me.txtUsuario.ForeColor = System.Drawing.Color.Black
         Me.txtUsuario.isPassword = False
         Me.txtUsuario.Location = New System.Drawing.Point(50, 230)
         Me.txtUsuario.Margin = New System.Windows.Forms.Padding(4)
@@ -211,7 +212,7 @@ Partial Class frmLog
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel2.Location = New System.Drawing.Point(47, 142)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(42, 16)
@@ -220,14 +221,14 @@ Partial Class frmLog
         '
         'txtEmail
         '
-        Me.txtEmail.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.txtEmail.BorderColorIdle = System.Drawing.Color.DarkGray
-        Me.txtEmail.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtEmail.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtEmail.BorderColorIdle = System.Drawing.Color.Black
+        Me.txtEmail.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtEmail.BorderThickness = 1
         Me.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTransition1.SetDecoration(Me.txtEmail, BunifuAnimatorNS.DecorationType.None)
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.txtEmail.ForeColor = System.Drawing.Color.DarkGray
+        Me.txtEmail.ForeColor = System.Drawing.Color.Black
         Me.txtEmail.isPassword = False
         Me.txtEmail.Location = New System.Drawing.Point(50, 162)
         Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
@@ -241,7 +242,7 @@ Partial Class frmLog
         Me.BunifuCustomLabel1.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel1.Location = New System.Drawing.Point(47, 66)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
         Me.BunifuCustomLabel1.Size = New System.Drawing.Size(57, 16)
@@ -250,14 +251,14 @@ Partial Class frmLog
         '
         'txtNombre
         '
-        Me.txtNombre.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.txtNombre.BorderColorIdle = System.Drawing.Color.DarkGray
-        Me.txtNombre.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtNombre.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtNombre.BorderColorIdle = System.Drawing.Color.Black
+        Me.txtNombre.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtNombre.BorderThickness = 1
         Me.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTransition1.SetDecoration(Me.txtNombre, BunifuAnimatorNS.DecorationType.None)
         Me.txtNombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.txtNombre.ForeColor = System.Drawing.Color.DarkGray
+        Me.txtNombre.ForeColor = System.Drawing.Color.Black
         Me.txtNombre.isPassword = False
         Me.txtNombre.Location = New System.Drawing.Point(50, 86)
         Me.txtNombre.Margin = New System.Windows.Forms.Padding(4)
@@ -271,7 +272,7 @@ Partial Class frmLog
         Me.Label1.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.Label1, BunifuAnimatorNS.DecorationType.None)
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(144, 11)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(154, 31)
@@ -299,7 +300,7 @@ Partial Class frmLog
         Me.btnLogIn.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(183, Byte), Integer))
         Me.btnLogIn.ActiveForecolor = System.Drawing.Color.White
         Me.btnLogIn.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(183, Byte), Integer))
-        Me.btnLogIn.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnLogIn.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.btnLogIn.BackgroundImage = CType(resources.GetObject("btnLogIn.BackgroundImage"), System.Drawing.Image)
         Me.btnLogIn.ButtonText = "Iniciar Sesión"
         Me.btnLogIn.Cursor = System.Windows.Forms.Cursors.Hand
@@ -323,7 +324,7 @@ Partial Class frmLog
         Me.BunifuCustomLabel7.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel7, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel7.ForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuCustomLabel7.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel7.Location = New System.Drawing.Point(47, 258)
         Me.BunifuCustomLabel7.Name = "BunifuCustomLabel7"
         Me.BunifuCustomLabel7.Size = New System.Drawing.Size(77, 16)
@@ -332,14 +333,14 @@ Partial Class frmLog
         '
         'txtPassword
         '
-        Me.txtPassword.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.txtPassword.BorderColorIdle = System.Drawing.Color.DarkGray
-        Me.txtPassword.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtPassword.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtPassword.BorderColorIdle = System.Drawing.Color.Black
+        Me.txtPassword.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtPassword.BorderThickness = 1
         Me.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTransition1.SetDecoration(Me.txtPassword, BunifuAnimatorNS.DecorationType.None)
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.txtPassword.ForeColor = System.Drawing.Color.DarkGray
+        Me.txtPassword.ForeColor = System.Drawing.Color.Black
         Me.txtPassword.isPassword = True
         Me.txtPassword.Location = New System.Drawing.Point(50, 279)
         Me.txtPassword.Margin = New System.Windows.Forms.Padding(4)
@@ -353,7 +354,7 @@ Partial Class frmLog
         Me.BunifuCustomLabel8.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.BunifuCustomLabel8, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuCustomLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel8.ForeColor = System.Drawing.Color.DarkGray
+        Me.BunifuCustomLabel8.ForeColor = System.Drawing.Color.Black
         Me.BunifuCustomLabel8.Location = New System.Drawing.Point(47, 137)
         Me.BunifuCustomLabel8.Name = "BunifuCustomLabel8"
         Me.BunifuCustomLabel8.Size = New System.Drawing.Size(55, 16)
@@ -362,14 +363,14 @@ Partial Class frmLog
         '
         'txtUser
         '
-        Me.txtUser.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(122, Byte), Integer))
-        Me.txtUser.BorderColorIdle = System.Drawing.Color.DarkGray
-        Me.txtUser.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtUser.BorderColorFocused = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer))
+        Me.txtUser.BorderColorIdle = System.Drawing.Color.Black
+        Me.txtUser.BorderColorMouseHover = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.txtUser.BorderThickness = 1
         Me.txtUser.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.BunifuTransition1.SetDecoration(Me.txtUser, BunifuAnimatorNS.DecorationType.None)
         Me.txtUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!)
-        Me.txtUser.ForeColor = System.Drawing.Color.DarkGray
+        Me.txtUser.ForeColor = System.Drawing.Color.Black
         Me.txtUser.isPassword = False
         Me.txtUser.Location = New System.Drawing.Point(50, 158)
         Me.txtUser.Margin = New System.Windows.Forms.Padding(4)
@@ -383,7 +384,7 @@ Partial Class frmLog
         Me.Label2.AutoSize = True
         Me.BunifuTransition1.SetDecoration(Me.Label2, BunifuAnimatorNS.DecorationType.None)
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(144, 11)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(177, 31)
@@ -394,22 +395,22 @@ Partial Class frmLog
         '
         Me.BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide
         Me.BunifuTransition1.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 0
-        Animation2.Padding = New System.Windows.Forms.Padding(0)
-        Animation2.RotateCoeff = 0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 0!
-        Animation2.TransparencyCoeff = 0!
-        Me.BunifuTransition1.DefaultAnimation = Animation2
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0.0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0.0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0.0!
+        Animation1.RotateLimit = 0.0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0.0!
+        Animation1.TransparencyCoeff = 0.0!
+        Me.BunifuTransition1.DefaultAnimation = Animation1
         '
         'BunifuSeparator1
         '
@@ -427,10 +428,10 @@ Partial Class frmLog
         '
         'btnClose
         '
-        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.BunifuTransition1.SetDecoration(Me.btnClose, BunifuAnimatorNS.DecorationType.None)
-        Me.btnClose.Image = Global.SistemaTransporte.My.Resources.Resources.close
-        Me.btnClose.ImageActive = Global.SistemaTransporte.My.Resources.Resources.close2
+        Me.btnClose.Image = Global.SistemaTransporte.My.Resources.Resources.Delete_2
+        Me.btnClose.ImageActive = Global.SistemaTransporte.My.Resources.Resources.Delete
         Me.btnClose.Location = New System.Drawing.Point(469, 12)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(54, 47)
@@ -446,7 +447,7 @@ Partial Class frmLog
         Me.btn1.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.btn1.ActiveForecolor = System.Drawing.Color.White
         Me.btn1.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(89, Byte), Integer))
-        Me.btn1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btn1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.btn1.BackgroundImage = CType(resources.GetObject("btn1.BackgroundImage"), System.Drawing.Image)
         Me.btn1.ButtonText = "Iniciar Sesión"
         Me.btn1.Cursor = System.Windows.Forms.Cursors.Hand
@@ -455,9 +456,9 @@ Partial Class frmLog
         Me.btn1.ForeColor = System.Drawing.Color.SeaGreen
         Me.btn1.IdleBorderThickness = 1
         Me.btn1.IdleCornerRadius = 1
-        Me.btn1.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.btn1.IdleForecolor = System.Drawing.Color.White
-        Me.btn1.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btn1.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.btn1.IdleForecolor = System.Drawing.Color.Black
+        Me.btn1.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.btn1.Location = New System.Drawing.Point(127, 31)
         Me.btn1.Margin = New System.Windows.Forms.Padding(5)
         Me.btn1.Name = "btn1"
@@ -472,7 +473,7 @@ Partial Class frmLog
         Me.btn2.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(89, Byte), Integer))
         Me.btn2.ActiveForecolor = System.Drawing.Color.White
         Me.btn2.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(67, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(89, Byte), Integer))
-        Me.btn2.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btn2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.btn2.BackgroundImage = CType(resources.GetObject("btn2.BackgroundImage"), System.Drawing.Image)
         Me.btn2.ButtonText = "Registrarse"
         Me.btn2.Cursor = System.Windows.Forms.Cursors.Hand
@@ -481,9 +482,9 @@ Partial Class frmLog
         Me.btn2.ForeColor = System.Drawing.Color.SeaGreen
         Me.btn2.IdleBorderThickness = 1
         Me.btn2.IdleCornerRadius = 1
-        Me.btn2.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
-        Me.btn2.IdleForecolor = System.Drawing.Color.White
-        Me.btn2.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.btn2.IdleFillColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.btn2.IdleForecolor = System.Drawing.Color.Black
+        Me.btn2.IdleLineColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.btn2.Location = New System.Drawing.Point(273, 31)
         Me.btn2.Margin = New System.Windows.Forms.Padding(5)
         Me.btn2.Name = "btn2"
@@ -491,17 +492,32 @@ Partial Class frmLog
         Me.btn2.TabIndex = 0
         Me.btn2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'ButtonX1
+        '
+        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.BunifuTransition1.SetDecoration(Me.ButtonX1, BunifuAnimatorNS.DecorationType.None)
+        Me.ButtonX1.Location = New System.Drawing.Point(12, 12)
+        Me.ButtonX1.Name = "ButtonX1"
+        Me.ButtonX1.Size = New System.Drawing.Size(18, 23)
+        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.ButtonX1.TabIndex = 6
+        Me.ButtonX1.Text = "1"
+        Me.ButtonX1.Visible = False
+        '
         'LoginStyle
         '
         Me.LoginStyle.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light
-        Me.LoginStyle.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        Me.LoginStyle.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
         '
         'frmLog
         '
+        Me.AcceptButton = Me.ButtonX1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(49, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(552, 644)
+        Me.Controls.Add(Me.ButtonX1)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.BunifuSeparator1)
         Me.Controls.Add(Me.btn1)
@@ -551,4 +567,5 @@ Partial Class frmLog
     Friend WithEvents BunifuSeparator1 As Bunifu.Framework.UI.BunifuSeparator
     Friend WithEvents LoginStyle As DevComponents.DotNetBar.StyleManager
     Friend WithEvents btnClose As Bunifu.Framework.UI.BunifuImageButton
+    Private WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
 End Class

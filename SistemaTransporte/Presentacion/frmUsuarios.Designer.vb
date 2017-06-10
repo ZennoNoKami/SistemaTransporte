@@ -37,9 +37,9 @@ Partial Class frmUsuarios
         Me.btnNuevo = New DevComponents.DotNetBar.ButtonX()
         Me.btnEliminar = New DevComponents.DotNetBar.ButtonX()
         Me.SlidePanel1 = New DevComponents.DotNetBar.Controls.SlidePanel()
-        Me.UcUsuarios2 = New SistemaTransporte.ucUsuarios()
         Me.cbEliminar = New DevComponents.DotNetBar.Controls.CheckBoxX()
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
+        Me.UcUsuarios2 = New SistemaTransporte.ucUsuarios()
         Me.GroupPanel1.SuspendLayout()
         CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SlidePanel1.SuspendLayout()
@@ -50,8 +50,8 @@ Partial Class frmUsuarios
         Me.GroupPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.GroupPanel1.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GroupPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.GroupPanel1.CanvasColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.GroupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007
         Me.GroupPanel1.Controls.Add(Me.dgv1)
         Me.GroupPanel1.DisabledBackColor = System.Drawing.Color.Empty
@@ -96,7 +96,7 @@ Partial Class frmUsuarios
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua
         Me.dgv1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgv1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgv1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dgv1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -108,7 +108,7 @@ Partial Class frmUsuarios
         Me.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Eliminar})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
@@ -117,7 +117,7 @@ Partial Class frmUsuarios
         Me.dgv1.DefaultCellStyle = DataGridViewCellStyle3
         Me.dgv1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgv1.EnableHeadersVisualStyles = False
-        Me.dgv1.GridColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.dgv1.GridColor = System.Drawing.Color.FromArgb(CType(CType(155, Byte), Integer), CType(CType(155, Byte), Integer), CType(CType(157, Byte), Integer))
         Me.dgv1.Location = New System.Drawing.Point(0, 0)
         Me.dgv1.Name = "dgv1"
         DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -217,7 +217,7 @@ Partial Class frmUsuarios
         Me.SlidePanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SlidePanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.SlidePanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         Me.SlidePanel1.Controls.Add(Me.UcUsuarios2)
         Me.SlidePanel1.ForeColor = System.Drawing.Color.Black
         Me.SlidePanel1.Location = New System.Drawing.Point(0, 12)
@@ -228,19 +228,9 @@ Partial Class frmUsuarios
         Me.SlidePanel1.Text = "SlidePanel1"
         Me.SlidePanel1.UsesBlockingAnimation = False
         '
-        'UcUsuarios2
-        '
-        Me.UcUsuarios2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.UcUsuarios2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.UcUsuarios2.ForeColor = System.Drawing.Color.Black
-        Me.UcUsuarios2.Location = New System.Drawing.Point(334, 51)
-        Me.UcUsuarios2.Name = "UcUsuarios2"
-        Me.UcUsuarios2.Size = New System.Drawing.Size(360, 400)
-        Me.UcUsuarios2.TabIndex = 0
-        '
         'cbEliminar
         '
-        Me.cbEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cbEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
         '
         '
         '
@@ -257,8 +247,18 @@ Partial Class frmUsuarios
         '
         'StyleManager1
         '
-        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2016
-        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(115, Byte), Integer), CType(CType(199, Byte), Integer)))
+        Me.StyleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2012Light
+        Me.StyleManager1.MetroColorParameters = New DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer)), System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(122, Byte), Integer), CType(CType(204, Byte), Integer)))
+        '
+        'UcUsuarios2
+        '
+        Me.UcUsuarios2.BackColor = System.Drawing.Color.FromArgb(CType(CType(239, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(242, Byte), Integer))
+        Me.UcUsuarios2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.UcUsuarios2.ForeColor = System.Drawing.Color.Black
+        Me.UcUsuarios2.Location = New System.Drawing.Point(334, 51)
+        Me.UcUsuarios2.Name = "UcUsuarios2"
+        Me.UcUsuarios2.Size = New System.Drawing.Size(360, 400)
+        Me.UcUsuarios2.TabIndex = 0
         '
         'frmUsuarios
         '
@@ -274,7 +274,6 @@ Partial Class frmUsuarios
         Me.Controls.Add(Me.SlidePanel1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ForeColor = System.Drawing.Color.Black
         Me.MinimumSize = New System.Drawing.Size(1000, 500)
         Me.Name = "frmUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
